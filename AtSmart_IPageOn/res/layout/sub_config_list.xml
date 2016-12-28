@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+	<TableLayout 
+	    android:id="@+id/config_layouts"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#ffffff"
+	    android:orientation="horizontal"
+	    android:stretchColumns="0" >
+
+    <TableRow>
+        <TextView android:layout_height="0dp" android:layout_width="0dp" android:text="" android:layout_span="4"></TextView>
+
+    </TableRow>
+
+    <RelativeLayout android:id="@+id/config_row" >
+
+        <kr.co.ultari.atsmart.basic.control.UserImageView
+            android:id="@+id/UserIcon"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginRight="0.67dp"
+            android:contentDescription="@string/noDesc"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_profile"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/config_line"
+            android:layout_width="3.33dp"
+            android:layout_height="match_parent"
+            android:background="#74afea"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/favorite_option_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/UserIcon"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/photo_top_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/custom_title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="left"
+                    android:text="@string/app_name"
+                    android:textColor="#333333"
+                    android:textSize="16.6dp" />
+
+                <TextView
+                    android:id="@+id/info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:text="@string/app_name"
+                    android:textColor="#7f7f7f"
+                    android:textSize="13.3dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/photo_bottom_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/custom_title_sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="left"
+                    android:text="@string/app_name"
+                    android:textColor="#ffffff"
+                    android:textSize="13.3dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/info_sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left"
+                    android:text="@string/app_name"
+                    android:textColor="#74afea"
+                    android:textSize="13.3dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/value"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/arrow"
+            android:gravity="right|center_vertical"
+            android:textColor="#74afea"
+            android:textSize="13.3dp" />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="20.5dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/icon_arrow_mystatus_pressed"
+            android:contentDescription="@string/noDesc" />
+
+        <LinearLayout
+            android:id="@+id/config_divide"
+            android:layout_width="match_parent"
+            android:layout_height="0.67dp"
+            android:layout_below="@+id/arrow"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/UserIcon"
+            android:background="#d6d6d6"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/config_edit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="32.3dp"
+            android:layout_alignBottom="@+id/UserIcon"
+            android:layout_alignLeft="@+id/UserIcon"
+            android:layout_alignRight="@+id/UserIcon"
+            android:background="#80000000"
+            android:gravity="center"
+            android:text="@string/edit"
+            android:textColor="#ffffff"
+            android:textSize="16.6dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</TableLayout>
+</LinearLayout>

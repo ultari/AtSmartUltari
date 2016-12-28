@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff888888"
+        android:layout_weight="0.2" >
+
+        <Button
+            android:id="@+id/background_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:background="#ffBED1DD" />
+
+        <ImageView
+            android:id="@+id/account_user_icon"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffffff" />
+
+        <Button
+            android:id="@+id/background_color2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:background="#ff536A8F"/>
+        
+        <ImageView
+            android:id="@+id/account_user_icon"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffffff" />
+
+        <Button
+            android:id="@+id/background_color3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:background="#ff13B0A4"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/account_password_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#ffffffff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff999999"
+        android:layout_weight="0.2" >
+        
+        <Button
+            android:id="@+id/background_color4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:background="#ffA5CDC0"/>
+        
+        <ImageView
+            android:id="@+id/account_user_icon"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffffff" />
+        
+        <Button
+            android:id="@+id/background_color5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:background="#ff9BBF5F"/>
+        
+        <ImageView
+            android:id="@+id/account_user_icon"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffffff" />
+        
+        <Button
+            android:id="@+id/background_color6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:background="#ffE7DE6E"/>
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/account_password_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#ffffffff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:background="#ff666666" >
+        
+        <Button
+            android:id="@+id/background_color7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:background="#ffF7906D"/>
+        
+        <ImageView
+            android:id="@+id/account_user_icon"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffffff" />
+        
+        <Button
+            android:id="@+id/background_color8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:background="#ffE47885"/>
+        
+        <ImageView
+            android:id="@+id/account_user_icon"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffffff" />
+        
+        <Button
+            android:id="@+id/background_color9"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:background="#ffEDAAB2"/>
+        
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/account_password_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#ffffffff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:background="#ff660000" >
+        
+        <Button
+            android:id="@+id/background_color10"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:background="#ff7B6368"/>
+        
+        <ImageView
+            android:id="@+id/account_user_icon"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffffff" />
+        
+        <Button
+            android:id="@+id/background_color11"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:background="#ffEEEEEE"/>
+        
+        <ImageView
+            android:id="@+id/account_user_icon"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffffff" />
+        
+        <Button
+            android:id="@+id/background_color12"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:background="#ff9E9E9E"/>
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/account_password_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#ffffffff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:background="#ff000088" >
+        
+        <Button
+            android:id="@+id/background_color13"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:background="#ff3F438A"/>
+        
+        <ImageView
+            android:id="@+id/account_user_icon"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffffff" />
+        
+        <Button
+            android:id="@+id/background_color14"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:background="#ff002C42"/>
+        
+        <ImageView
+            android:id="@+id/account_user_icon"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffffff" />
+        
+        <Button
+            android:id="@+id/background_color15"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:background="#ff818B9C"/>
+    </LinearLayout>
+
+</LinearLayout>

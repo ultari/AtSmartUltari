@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    
+    <!-- emoticon -->
+    <string name="emoticon_adore">ㅎㅎ</string>
+    <string name="emoticon_ah">아</string>
+	<string name="emoticon_amazing">놀람</string>
+	<string name="emoticon_angel">천사</string>
+	<string name="emoticon_angry">성난</string>
+	<string name="emoticon_baby">아기</string>
+	<string name="emoticon_bad_egg">악당</string>
+	<string name="emoticon_baffle">당황</string>
+	<string name="emoticon_batman">박쥐</string>
+	<string name="emoticon_beaten">맞은</string>
+	<string name="emoticon_bigsmile">웃음</string>
+	<string name="emoticon_bubblegum">풍선</string>
+	<string name="emoticon_bye_bye">안녕</string>
+	<string name="emoticon_confuse">혼란</string>
+	<string name="emoticon_cool">침착</string>
+	<string name="emoticon_crazy">미친</string>
+	<string name="emoticon_cyclops">애꾸</string>
+	<string name="emoticon_doubt">의심</string>
+	<string name="emoticon_exciting">신남</string>
+	<string name="emoticon_eyes_droped">드랍</string>
+	<string name="emoticon_face_monkey">동물</string>
+	<string name="emoticon_face_panda">판다</string>
+	<string name="emoticon_greedy">욕심</string>
+	<string name="emoticon_grin">활짝</string>
+	<string name="emoticon_happy">행복</string>
+	<string name="emoticon_horror">공포</string>
+	<string name="emoticon_hungry">고픔</string>
+	<string name="emoticon_love">사랑</string>
+	<string name="emoticon_mad">화난</string>
+	<string name="emoticon_medic">의사</string>
+	<string name="emoticon_misdoubt">의혹</string>
+	<string name="emoticon_mummy">미라</string>
+	<string name="emoticon_question">질문</string>
+	<string name="emoticon_red">붉은</string>
+	<string name="emoticon_sad">슬픈</string>
+	<string name="emoticon_shame">수치</string>
+	<string name="emoticon_shocked">충격</string>
+	<string name="emoticon_silent">침묵</string>
+	<string name="emoticon_sleep">자다</string>
+	<string name="emoticon_smile">미소</string>
+	<string name="emoticon_spiderman">거미</string>
+	<string name="emoticon_star">별</string>
+	<string name="emoticon_surrender">항복</string>
+	<string name="emoticon_tire">피로</string>
+	<string name="emoticon_tongue">메롱</string>
+	<string name="emoticon_waaaht">wa</string>
+	<string name="emoticon_what">어떤</string>
+	<string name="emoticon_whist">조용</string>
+	<string name="emoticon_wink">윙크</string>
+	<string name="emoticon_ghost">유령</string>
+	<string name="emoticon_folder">폴더</string>
+	<string name="emoticon_add">추가</string>
+	<string name="emoticon_dead">죽음</string>
+	
+</resources>

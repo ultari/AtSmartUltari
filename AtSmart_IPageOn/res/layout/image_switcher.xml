@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/switcher_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed" >
+
+    <kr.co.ultari.atsmart.basic.util.CustomWebView
+            android:id="@+id/webView_switcher"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_below="@+id/gallery"/>
+
+    <Button
+        android:id="@+id/switcher_download"
+        style="@style/ButtonText"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_download"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/album_top"
+        android:layout_width="match_parent"
+        android:layout_height="50.6dp"
+        android:background="@drawable/pattern_bar"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/switcher_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:background="@drawable/chat_close" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/chatOptionAlbum"
+            android:textColor="#ffffff"
+            android:textSize="19dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/chat_close"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <Gallery
+        android:id="@+id/gallery"
+        android:layout_width="match_parent"
+        android:layout_height="52.6dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="50dp"
+        android:background="#c4dae9"
+        android:gravity="center_vertical"
+        android:spacing="5dp" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.67dp"
+        android:layout_below="@+id/album_top"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+</RelativeLayout>

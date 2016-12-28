@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="324.6dp"
+    android:layout_height="wrap_content"
+    android:background="#003E7C"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="2.33dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical" >
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50.6dp"
+       	android:background="@drawable/pattern_bar_bg"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.1" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/nickname_custom_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/nick"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textSize="19dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.1" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.67dp"
+            android:orientation="vertical"
+            android:background="#d6d6d6" >
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="59.43dp" >
+
+        <EditText
+            android:id="@+id/nickName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="17.6dp"
+            android:layout_marginRight="17.6dp"
+            android:layout_marginTop="17.6dp"
+            android:background="#f1f1f1"
+            android:ems="10"
+            android:hint="상태 메시지를 입력해 주세요."
+            android:inputType="text"
+            android:paddingLeft="13dp"
+            android:textColor="#333333"
+            android:textColorHint="#7f7f7f"
+            android:textSize="16.6dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="33.3dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/countNickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="17.6dp"
+            android:layout_marginRight="17.6dp"
+            android:gravity="center_vertical"
+            android:text="0/13자"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#74afea"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.67dp"
+            android:orientation="vertical"
+            android:background="#d6d6d6" >
+        </LinearLayout>
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <RadioGroup
+            android:id="@+id/nick_btn_group"
+            android:layout_width="match_parent"
+            android:layout_height="183dp"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/nick_btn_input"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:button="@drawable/button_radio"
+                android:paddingLeft="17.6dp"
+                android:text="@string/input_nickname"
+                android:textColor="#7f7f7f"
+                android:textSize="15.6dp" />
+		    
+            <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="0.67dp"
+	            android:orientation="vertical"
+	            android:background="#d6d6d6" >
+	        </LinearLayout>
+        
+            <RadioButton
+                android:id="@+id/nick_btn_leftseat"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:button="@drawable/button_radio"
+                android:paddingLeft="17.6dp"
+                android:text="@string/leftSeat"
+                android:textColor="#7f7f7f"
+                android:textSize="15.6dp" >
+		    </RadioButton>
+		    
+            <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="0.67dp"
+	            android:orientation="vertical"
+	            android:background="#d6d6d6" >
+	        </LinearLayout>
+        
+		    <RadioButton
+		        android:id="@+id/nick_btn_meeting"
+		        android:layout_width="match_parent"
+		        android:layout_height="61dp"
+		        android:layout_gravity="center_horizontal"
+		        android:layout_marginLeft="20dp"
+		        android:button="@drawable/button_radio"
+		        android:paddingLeft="17.6dp"
+		        android:text="@string/meeting"
+		        android:textColor="#7f7f7f"
+                android:textSize="15.6dp" >
+
+		    </RadioButton>
+	   </RadioGroup>
+	   
+        
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center" >
+
+		<TableRow>
+    	    <TextView android:layout_height="0dp" android:layout_span="2" android:layout_width="0dp" android:text=""></TextView>
+    	</TableRow>
+    	<TableRow
+    	    android:gravity="center"
+    	    android:background="#d6d6d6">
+
+    		<Button
+    		    android:id="@+id/cancelNickName"
+    		    android:layout_width="154dp"
+    		    android:layout_height="42.6dp"
+    		    android:layout_marginBottom="4dp"
+    		    android:layout_marginLeft="4dp"
+    		    android:layout_marginRight="2dp"
+    		    android:layout_marginTop="4dp"
+    		    android:background="#ffffff"
+    		    android:text="@string/cancel"
+    		    android:textColor="#7f7f7f"
+    		    android:textSize="15.6dp" />
+
+			<Button
+			    android:id="@+id/saveNickName"
+			    android:layout_width="154dp"
+			    android:layout_height="42.6dp"
+			    android:layout_marginBottom="4dp"
+			    android:layout_marginLeft="2dp"
+			    android:layout_marginRight="4dp"
+			    android:layout_marginTop="4dp"
+			    android:background="#ffffff"
+			    android:text="@string/save"
+			    android:textColor="#7f7f7f"
+    		    android:textSize="15.6dp" >
+
+			</Button>
+
+	   	</TableRow>
+    </TableLayout>
+</LinearLayout>
+</LinearLayout>

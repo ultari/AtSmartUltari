@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="39.3dp"
+    android:background="#ffffff">
+    
+    <kr.co.ultari.atsmart.basic.control.UserImageView
+        class="kr.co.ultari.atsmart.basic.control.UserImageView"
+        android:id="@+id/messageViewUserImage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/noDesc"
+        android:src="@drawable/img_profile_72x72"/>
+    
+    <TextView
+        android:id="@+id/messageViewUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/messageViewUserImage"
+        android:layout_marginLeft="15dp"
+        android:layout_alignTop="@id/messageViewUserImage"
+        android:textColor="#333333"
+        android:textSize="16.6dp"
+        android:layout_marginTop="2dp"
+        android:textStyle="normal"/>
+
+</RelativeLayout>

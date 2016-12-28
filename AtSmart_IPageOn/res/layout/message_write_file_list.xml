@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#ffffff">
+    
+    <ImageView
+        android:id="@+id/messageWriteFileIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="@string/noDesc"
+        android:src="@drawable/icon_file" />
+    
+    <TextView
+        android:id="@+id/messageWriteFileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/messageWriteFileIcon"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="50dp"
+        android:layout_alignTop="@id/messageWriteFileIcon"
+        android:textColor="#333333"
+        android:textSize="16.6dp"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        android:layout_marginTop="2dp"
+        android:textStyle="normal"/>
+    
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/noti_delete"
+        android:background="@android:color/transparent"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/noDesc"
+        android:id="@+id/messageWriteFileDelete"/>
+
+</RelativeLayout>

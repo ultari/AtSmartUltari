@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <kr.co.ultari.atsmart.basic.control.UserImageView
+            android:id="@+id/calllog_detail_photo"
+            android:layout_width="179dp"
+            android:layout_height="179dp"
+            android:layout_marginBottom="1dp"
+            class="kr.co.ultari.atsmart.basic.control.UserImageView"
+            android:background="@drawable/img_profile"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="179dp"
+            android:layout_height="179dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:layout_marginLeft="1dp"
+                android:background="#DDE2F5"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/calllog_detail_option"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="false"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/btn_detail_option" />
+
+                <TextView
+                    android:id="@+id/keypad_addcontact_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="false"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_weight="0.5"
+                    android:textColor="#333333"
+                    android:text="010-1234-5678"
+                    android:textSize="16.6dp" />
+
+                <LinearLayout
+                    android:id="@+id/calllog_detail_option_dialog"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/calllog_detail_option"
+                    android:layout_marginRight="13dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <Button
+                        android:id="@+id/calllog_detail_remove"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fefefe"
+                        android:text="@string/delete"
+                        android:textColor="#333333"
+                        android:textSize="13.3dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="91dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:background="#74afea"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/calllog_detail_add_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/icon_addaddress3_normal" />
+
+                <TextView
+                    android:id="@+id/calllog_detail_add_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="새 연락처 추가"
+                    android:textColor="#ffffff"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.67dp"
+            android:background="#d6d6d6"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout5"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/calllog_detail_more"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:background="#74afea"
+            android:text="@string/more_calllog"
+            android:textColor="#ffffff"
+            android:textSize="13.3dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_alignParentLeft="true"
+        android:background="#f1f1f1"
+        android:layout_below="@+id/linearLayout2" >
+
+        <LinearLayout
+            android:layout_width="3.33dp"
+            android:layout_height="match_parent"
+            android:background="#74afea"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/calllog_number_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/info_phone"
+            android:textColor="#333333"
+            android:textSize="16.6dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.67dp"
+        android:layout_below="@+id/linearLayout3"
+        android:background="#d6d6d6"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+        
+    <LinearLayout
+        android:id="@+id/infoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_below="@+id/linearLayout3"
+        android:background="#ffffff" >
+        
+        <TextView
+            android:id="@+id/calllog_detail_telephone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:textColor="#333333"
+            android:text="010-1234-5678"
+            android:textSize="16.6dp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/calllog_detail_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/icon_chat" />
+
+        <ImageView
+            android:layout_width="0.67dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="#d6d6d6" />
+        
+        <Button
+            android:id="@+id/calllog_detail_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/icon_message" />
+
+        <ImageView
+            android:layout_width="0.67dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="#d6d6d6" />
+
+        <Button
+            android:id="@+id/calllog_detail_fmc_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/icon_call_fmc" />
+
+        <ImageView
+            android:layout_width="0.67dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="#d6d6d6" />
+        
+        <Button
+            android:id="@+id/calllog_detail_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/call_input" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_below="@+id/infoLayout"
+        android:layout_centerVertical="true"
+        android:background="#f1f1f1" >
+
+        <LinearLayout
+            android:layout_width="3.33dp"
+            android:layout_height="match_parent"
+            android:background="#74afea"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/calllog_record_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/call_record"
+            android:textColor="#333333"
+            android:textSize="16.6dp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout4"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.67dp"
+            android:background="#d6d6d6"
+            android:orientation="vertical" >
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/calllog_detail_title1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:textColor="#333333"
+            android:textSize="16.6dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp" >
+
+            <ImageView
+                android:id="@+id/callog_detail_icon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/img_sendcall" />
+
+            <TextView
+                android:id="@+id/calllog_detail_date1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="0.5"
+                android:gravity="left|center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#7f7f7f"
+                android:textSize="13.3dp" />
+
+            <TextView
+                android:id="@+id/calllog_detail_duration1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="23dp"
+                android:layout_weight="0.4"
+                android:gravity="right|center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#7f7f7f"
+                android:textSize="13.3dp" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout6"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.67dp"
+            android:background="#d6d6d6"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/calllog_detail_title2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:textColor="#333333"
+            android:textSize="16.6dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp" >
+
+            <ImageView
+                android:id="@+id/callog_detail_icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/img_sendcall" />
+
+            <TextView
+                android:id="@+id/calllog_detail_date2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="0.5"
+                android:gravity="left|center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#7f7f7f"
+                android:textSize="13.3dp" />
+
+            <TextView
+                android:id="@+id/calllog_detail_duration2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="23dp"
+                android:layout_weight="0.4"
+                android:gravity="right|center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#7f7f7f"
+                android:textSize="13.3dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout7"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.67dp"
+            android:background="#d6d6d6"
+            android:orientation="vertical" >
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/calllog_detail_title3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:textColor="#333333"
+            android:textSize="16.6dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp" >
+
+            <ImageView
+                android:id="@+id/callog_detail_icon3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/img_sendcall" />
+
+            <TextView
+                android:id="@+id/calllog_detail_date3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="0.5"
+                android:gravity="left|center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#7f7f7f"
+                android:textSize="13.3dp" />
+
+            <TextView
+                android:id="@+id/calllog_detail_duration3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="23dp"
+                android:layout_weight="0.4"
+                android:gravity="right|center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#7f7f7f"
+                android:textSize="13.3dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#ffffff">
+    
+    <ImageView
+        android:id="@+id/messageWriteUserImage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/noDesc"
+        android:src="@drawable/img_profile_100x100"/>
+    
+    <TextView
+        android:id="@+id/messageWriteUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/messageWriteUserImage"
+        android:layout_marginLeft="15dp"
+        android:layout_alignTop="@id/messageWriteUserImage"
+        android:textColor="#333333"
+        android:textSize="16.6dp"
+        android:layout_marginTop="2dp"
+        android:textStyle="normal"/>
+    
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/noti_delete"
+        android:background="@android:color/transparent"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/noDesc"
+        android:id="@+id/messageWriteUserDelete"/>
+
+</RelativeLayout>

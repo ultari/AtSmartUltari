@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42.6dp"
+        android:background="#f1f1f1" >
+
+        <LinearLayout
+            android:layout_width="3.33dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:background="#8d9dd8"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/chatRoomList_adduser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/btn_adduser" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.67dp"
+        android:background="#d6d6d6"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/chatRoomList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="0px"
+ 		android:divider="#ffffff" 
+        android:background="#ffffff"
+        android:scrollbarStyle="outsideOverlay"
+		android:fadeScrollbars="true"
+		android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track"
+		android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+		android:scrollbarSize="5dip"
+		android:scrollbarFadeDuration="1000"
+		android:scrollbarDefaultDelayBeforeFade="2000"/>
+</LinearLayout>

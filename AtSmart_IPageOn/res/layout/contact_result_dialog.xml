@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50.6dp"
+        android:background="@drawable/pattern_bar"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/contact_result_btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:background="@drawable/favorite_cancel"
+            android:text="@string/cancel"
+            android:textColor="#ffffff"
+            android:textSize="13.3dp" />
+
+        <TextView
+            android:id="@+id/contact_result_title"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/contact_search_result"
+            android:textColor="#ffffff"
+            android:textSize="16.6dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/favorite_cancel"
+            android:text="@string/cancel"
+            android:textColor="#333C67"
+            android:visibility="invisible" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.67dp"
+        android:orientation="vertical"
+        android:background="#d6d6d6" >
+    </LinearLayout>
+
+    <ListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/lv_contact_resultlist"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#ffffff"
+		android:dividerHeight="0px"
+		android:divider="#ffffff"
+        android:layout_weight="0.8" >
+
+</ListView>
+
+</LinearLayout>

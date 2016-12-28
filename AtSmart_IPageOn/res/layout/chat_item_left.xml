@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000" >
+	<!-- #FFEDEDED -->
+    
+    <ImageView
+        android:id="@+id/left_bubble_user_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/noDesc"
+        android:src="@drawable/img_talk_profile_102x102" />
+
+    <TextView
+        android:id="@+id/left_bubble_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/left_bubble_user_image"
+        android:layout_marginLeft="20dp"
+        android:textColor="#333333"
+        android:textSize="11.6dp"
+        android:layout_toRightOf="@id/left_bubble_user_image" />
+
+    <ImageView
+        android:id="@+id/bubble_left_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/left_bubble_name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/left_bubble_user_image"
+        android:contentDescription="@string/noDesc"
+        android:src="@drawable/img_bubble_bg_wh_point" />
+
+    <TableLayout
+        android:id="@+id/left_bubble_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/left_bubble_name"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/bubble_left_arrow" >
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/noDesc"
+                android:src="@drawable/img_bubble_bg_wh_tl" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_bubble_bg_wh_tm"
+                android:contentDescription="@string/noDesc" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/noDesc"
+                android:src="@drawable/img_bubble_bg_wh_tr" />
+        </TableRow>
+
+        <TableRow android:visibility="visible" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/img_bubble_bg_wh_ml"
+                android:contentDescription="@string/noDesc" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFFFF" >
+
+                <TextView
+                    android:id="@+id/left_bubble_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web|email|map"
+                    android:background="#FFFFFFFF"
+                    android:maxWidth="200dp" 
+                    android:textSize="14.6dp"
+                    android:textColor="#FF333333"/>
+
+                <ImageView
+                    android:id="@+id/talk_file_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFFFF"
+                    android:src="@drawable/icon_file"
+                    android:contentDescription="@string/noDesc" />
+
+                <TextView
+                    android:id="@+id/talk_fileName"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/talk_file_icon"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/talk_file_icon"
+                    android:background="#FFFFFFFF"
+                    android:ellipsize="middle"
+                    android:singleLine="true"
+                    android:textColor="#333333"
+                    android:textSize="14.6dp" />
+
+                <TextView
+                    android:id="@+id/talk_fileSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/talk_fileName"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@id/talk_file_icon"
+                    android:textColor="#333333"
+                    android:textSize="12dp" />
+
+                <ProgressBar
+                    android:id="@+id/talk_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="200dp"
+                    android:layout_height="5dp"
+                    android:layout_alignLeft="@id/talk_file_icon"
+                    android:layout_below="@id/talk_file_icon"
+                    android:layout_marginTop="6.67dp"
+                    android:max="100"
+                    android:progress="50" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/img_bubble_bg_wh_mr"
+                android:contentDescription="@string/noDesc" />
+        </TableRow>
+
+        <TableRow android:id="@+id/left_bubble_bottom" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/noDesc"
+                android:src="@drawable/img_bubble_bg_wh_bl" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_bubble_bg_wh_bm"
+                android:contentDescription="@string/noDesc" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/noDesc"
+                android:src="@drawable/img_bubble_bg_wh_br" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_below="@id/left_bubble_box" />
+
+    <TextView
+        android:id="@+id/left_bubble_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/left_bubble_box"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/bubble_left_arrow"
+        android:singleLine="true"
+        android:textColor="#80000000"
+        android:textSize="11.6dp" />
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Korea Expressway Corporation -->
+    <!-- <string name="app_name">EX TALK</string>
+	<string name="info_phone">전화번호</string>
+    <string name="info_email">이메일</string> -->
+    
+    <!-- namdong gu office -->
+    <!-- <string name="app_name">WE VoIP Talk</string>
+	<string name="info_phone">전화번호</string>
+    <string name="info_email">이메일</string> -->
+    
+    <!-- amotech -->
+    <string name="app_name">AtTalk</string>
+	<string name="info_phone">전화번호</string>
+    <string name="info_email">이메일</string>
+    <string name="info_mvoip">모바일 내선번호</string>
+</resources>

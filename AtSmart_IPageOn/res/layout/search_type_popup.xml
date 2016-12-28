@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <Button
+        android:id="@+id/searchTypeName"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#8d9dd8"
+        android:gravity="center_vertical|center"
+        android:text="@string/search_type_name"
+        android:textColor="#393939"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="#DCDCDC" >
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/searchTypePart"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical|center"
+        android:text="@string/search_type_part"
+        android:textColor="#393939"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="#DCDCDC" >
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/searchTypeId"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical|center"
+        android:text="@string/search_type_id"
+        android:textColor="#393939"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="#DCDCDC" >
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/searchTypePosition"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical|center"
+        android:text="@string/search_type_position"
+        android:textColor="#393939"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="#DCDCDC" >
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/searchTypePhone"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical|center"
+        android:text="@string/search_type_phone"
+        android:textColor="#393939"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="#DCDCDC" >
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/searchTypeMobile"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical|center"
+        android:text="@string/search_type_mobile"
+        android:textColor="#393939"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="#DCDCDC" >
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/searchTypeJob"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical|center"
+        android:text="@string/search_type_job"
+        android:textColor="#393939"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+    
+</LinearLayout>

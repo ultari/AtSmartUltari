@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fefefe"
+    android:paddingLeft="3dp"
+    android:stretchColumns="1"
+    android:orientation="horizontal" >
+    <TableRow android:layout_width="0dp" android:layout_height="0dp" android:gravity="center_vertical">
+  	   	<TextView android:layout_span="3" android:layout_height="0dp" android:layout_width="0dp" android:text=""></TextView>
+  	</TableRow>
+
+    <TableRow
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp" >
+
+        <kr.co.ultari.atsmart.basic.control.UserImageView
+            android:id="@+id/UserIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="6dp"
+            class="kr.co.ultari.atsmart.control.UserImageView"
+            android:contentDescription="@string/noDesc"
+            android:src="@drawable/img_contract_list" />
+	    
+	    <TextView
+	        android:id="@+id/selectedUserName"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="left|center_vertical"
+	        android:text="@string/search_type_name"
+	        android:textColor="#393939"
+	        android:textSize="19dp" >
+
+</TextView>
+	    
+	    <ImageButton
+	        android:id="@+id/DeleteSelected"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginRight="13dp"
+	        android:background="@drawable/noti_addressee_delete"
+	        android:contentDescription="@string/noDesc" />
+
+	    </TableRow>
+</TableLayout>

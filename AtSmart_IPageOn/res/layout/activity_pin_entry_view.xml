@@ -1,0 +1,399 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".PinEntryView"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50.6dp"
+        android:background="@drawable/pattern_bar">
+
+        <Button
+            android:id="@+id/buttonExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/chat_close"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/titleBox"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="13dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="Enter PIN"
+            android:textColor="#ffffff"
+            android:textSize="19dp" />
+        
+        <Button
+            android:id="@+id/dummy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/chat_close"
+            android:gravity="center"
+            android:padding="6dip"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/pinview_input_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="PIN을 입력해주세요."
+            android:textColor="#74afea"
+            android:textSize="19dp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="false"
+        android:layout_weight="0.8"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/pinview_input_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="PIN 입력"
+                android:textColor="#333333"
+                android:textSize="19dp" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pinInputBox"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/pinBox0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:editable="false"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        android:password="true"
+        android:text=""
+        android:textColor="#7f7f7f"
+        android:textSize="73.3dp" />
+
+    <TextView
+        android:id="@+id/pinBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:editable="false"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        android:password="true"
+        android:text=""
+        android:textColor="#7f7f7f"
+        android:textSize="73.3dp" />
+
+    <TextView
+        android:id="@+id/pinBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:editable="false"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        android:password="true"
+        android:text=""
+        android:textColor="#7f7f7f"
+        android:textSize="73.3dp" />
+
+    <TextView
+        android:id="@+id/pinBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:editable="false"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        android:password="true"
+        android:text=""
+        android:textColor="#7f7f7f"
+        android:textSize="73.3dp" />
+    
+    <TextView
+        android:id="@+id/pinBox4"
+        android:visibility="gone"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:background="@drawable/border_gray"
+        android:editable="false"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        android:password="true"
+        android:text=""
+        android:textColor="#ffd700"
+        android:textSize="30dp" />
+    
+    <TextView
+        android:id="@+id/pinBox5"
+        android:visibility="gone"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:background="@drawable/border_gray"
+        android:editable="false"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        android:password="true"
+        android:text=""
+        android:textColor="#ffd700"
+        android:textSize="30dp" />
+     
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/statusMessage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="0.14"
+        android:gravity="center"
+        android:padding="5dip"
+        android:text=""
+        android:textColor="#ec1b30"
+        android:textSize="15.67dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/keypad_input"
+                android:fontFamily="sans-serif"
+                android:padding="6dip"
+                android:text="1"
+                android:textColor="@drawable/pin_text_color"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/keypad_input"
+                android:fontFamily="sans-serif"
+                android:padding="6dip"
+                android:text="2"
+                android:textColor="@drawable/pin_text_color"
+                android:textSize="40dp" />
+            
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/keypad_input"
+                android:fontFamily="sans-serif"
+                android:padding="6dip"
+                android:text="3"
+                android:textColor="@drawable/pin_text_color"
+                android:textSize="40dp" />
+
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/keypad_input"
+                android:fontFamily="sans-serif"
+                android:padding="6dip"
+                android:text="4"
+                android:textColor="@drawable/pin_text_color"
+                android:textSize="40dp" />
+            
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/keypad_input"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif"
+                android:padding="6dip"
+                android:text="5"
+                android:textColor="@drawable/pin_text_color"
+                android:textSize="40dp" />
+            
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/keypad_input"
+                android:fontFamily="sans-serif"
+                android:padding="6dip"
+                android:text="6"
+                android:textColor="@drawable/pin_text_color"
+                android:textSize="40dp" />
+
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/keypad_input"
+                android:fontFamily="sans-serif"
+                android:padding="6dip"
+                android:text="7"
+                android:textColor="@drawable/pin_text_color"
+                android:textSize="40dp" />
+            
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/keypad_input"
+                android:fontFamily="sans-serif"
+                android:padding="6dip"
+                android:text="8"
+                android:textColor="@drawable/pin_text_color"
+                android:textSize="40dp" />
+            
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/keypad_input"
+                android:fontFamily="sans-serif"
+                android:padding="6dip"
+                android:text="9"
+                android:textColor="@drawable/pin_text_color"
+                android:textSize="40dp" />
+
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/buttonClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/keypad_input"
+                android:fontFamily="sans-serif"
+                android:padding="6dip"
+                android:text="종료"
+                android:textColor="@drawable/pin_text_color"
+                android:textSize="25dp"  />
+            
+            <Button
+                android:id="@+id/button0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/keypad_input"
+                android:padding="6dip"
+                android:text="0"
+                android:textColor="@drawable/pin_text_color"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/buttonDeleteBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/keypad_del"
+                android:padding="6dip" />
+
+        </RelativeLayout>
+        
+    </LinearLayout>
+   
+    </LinearLayout>
+</LinearLayout>

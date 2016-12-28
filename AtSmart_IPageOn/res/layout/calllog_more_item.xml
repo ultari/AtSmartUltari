@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="63dp"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="20dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/calllog_moreitem_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_incomingcall" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/calllog_moreitem_date"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="6dp"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:textColor="#333333"
+            android:textSize="16.6dp" />
+
+        <TextView
+            android:id="@+id/calllog_moreitem_duration"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="top"
+            android:layout_marginBottom="6dp"
+            android:layout_weight="0.5"
+            android:gravity="top"
+            android:textColor="#7f7f7f"
+            android:textSize="13.3dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_weight="0.1"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/calllog_moreitem_fmccall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fmc_input"
+            android:focusable="false" />
+    </LinearLayout>
+    
+    <ImageView
+            android:layout_width="0.67dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="#d6d6d6" />
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_weight="0.1"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/calllog_moreitem_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/call_input"
+            android:focusable="false" />
+    </LinearLayout>
+
+</LinearLayout>

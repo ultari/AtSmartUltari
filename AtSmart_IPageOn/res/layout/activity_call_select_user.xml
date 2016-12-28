@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50.67dp"
+        android:background="@drawable/pattern_bar" >
+	
+        <Button
+            android:id="@+id/searchview_exit"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="13dp"
+            android:background="@drawable/favorite_cancel"
+            android:text="취소"
+            android:textSize="13.3dp"
+            android:textColor="#ffffff"/>
+	
+        <TextView
+            android:id="@+id/searchview_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="0.8"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="돌려주기"
+            android:textColor="#ffffff"
+    	    android:textSize="19dp"/>
+	
+        <Button
+            android:id="@+id/searchview_submit"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/favorite_cancel"
+            android:text="확인"
+            android:textSize="13.3dp"
+            android:textColor="#ffffff"/>
+	
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFFFF">
+        
+        <EditText 
+            android:id="@+id/switching_inputfield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/switching_inputfield"
+            android:hint="전화번호를 입력해 주세요."
+            android:textColor="#333333"
+            android:textSize="13.3dp"
+            android:ems="10"
+            android:textColorHint="#FF7F7F7F"
+            android:padding="10dp"
+            android:inputType="phone"
+            android:layout_margin="10dp"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FFD6D6D6"/>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#FFF1F1F1">
+        
+        <Button 
+            android:id="@+id/call_tab_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="연락처"
+            android:textColor="@drawable/call_select_tab_text_color"
+            android:background="@drawable/contact_tab3"
+            android:textSize="13sp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+        
+        <Button
+            android:id="@+id/call_tab_organization" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/call_tab_contact"
+            android:text="임직원"
+            android:textSize="13sp"
+            android:textColor="@drawable/call_select_tab_text_color"
+            android:background="@drawable/contact_tab3"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+    
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FFD6D6D6"/>
+    
+    <LinearLayout
+        android:id="@+id/contact_layout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" 
+        android:background="#f1f1f1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/call_search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="11dp"
+            android:background="@drawable/icon_search"
+            android:contentDescription="@null"/>
+
+        <EditText
+            android:id="@+id/call_search_input"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="13dp"
+            android:background="#f1f1f1"
+            android:ems="10"
+            android:textColor="#333333"
+            android:textColorHint="#FF7F7F7F"
+            android:textSize="13.3dp"
+            android:singleLine="true"
+            android:visibility="visible"/>
+        
+        <ImageButton
+            android:id="@+id/call_value_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/search_delete"
+            android:background="@null"
+            android:layout_marginRight="5dp"
+            android:visibility="visible"
+            android:contentDescription="@null"/>
+        
+        <Button
+            android:id="@+id/call_btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_talk_search"
+            android:visibility="visible"/>
+	
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FFD6D6D6"/>
+    
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/callSearchResult"
+        android:layout_weight="1"
+        android:background="#FFFFFFFF"/>
+    
+</LinearLayout>

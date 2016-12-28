@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42.6dp"
+        android:background="#f1f1f1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="3.33dp"
+            android:layout_height="match_parent"
+            android:background="#74afea"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            </LinearLayout>
+            
+		    <TextView
+		        android:id="@+id/countLabel"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_gravity="left"
+		        android:layout_marginLeft="13dp"
+		        android:layout_toLeftOf="@+id/deleteAllButton"
+		        android:gravity="left|center_vertical"
+		        android:text="test"
+		        android:textColor="#969696"
+		        android:textSize="19dp" >
+
+	</TextView>
+
+		    <Button
+		        android:id="@+id/deleteAllButton"
+		        android:layout_width="76dp"
+		        android:layout_height="23.3dp"
+		        android:layout_alignParentBottom="false"
+		        android:layout_alignParentRight="true"
+		        android:layout_centerVertical="true"
+		        android:layout_marginRight="25dp"
+		        android:background="@drawable/btn_note_box"
+		        android:focusable="false"
+		        android:focusableInTouchMode="false"
+		        android:textColor="@color/note_clickable_words"
+                android:textColorHighlight="@color/note_clickable_words"
+                android:textColorLink="@color/note_clickable_words"
+                android:textSize="13.3dp"
+                android:textStyle="normal"
+                android:text="@string/deleteAll" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.67dp"
+        android:background="#d6d6d6"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/notifyList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:fadeScrollbars="true"
+        android:scrollbarDefaultDelayBeforeFade="2000"
+        android:scrollbarFadeDuration="1000"
+        android:scrollbarSize="5dip"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+        android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track" 
+        android:dividerHeight="0px"
+ 		android:divider="#00000000"/>
+
+</LinearLayout>

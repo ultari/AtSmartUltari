@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+ <!--트랙의 배경이미지-->
+  <item android:id="@android:id/background"
+   android:drawable="@drawable/config_audio_empty"
+   />
+
+<!--트랙의 선택됐을때 이미지-->
+  <item android:id="@android:id/progress"
+   android:drawable="@drawable/config_audio_full"
+   />
+</layer-list>
+<!-- 2016-03-31 -->
